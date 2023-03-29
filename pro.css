@@ -1,0 +1,113 @@
+body{
+    background-image: url('./pic.jpg');
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+}
+.box{
+    border: 2px solid transparent;
+    position: relative;
+    border-radius: 20px;
+    height: 550px;
+    width: 400px;
+    padding: 20px;
+    margin: 6% auto 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.header{
+    width: 300px;
+    height: 60px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding-top: 20px;
+    padding-bottom: 0;
+    justify-content: space-between;
+}
+.header.a{
+    font-size: 20px;
+    display: inline-flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.active{
+    position: absolute;
+    color: #b55fd1;
+    font-weight: bold;
+    left: 35%;
+
+}
+.header.active:after{
+    position:absolute;
+    content: "";
+    border: none;
+}
+#errormse{
+    color: red;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.content{
+    display: inline-flex;
+    overflow: hidden;
+    position: absolute;
+    left: 27%;
+}
+.extend form{
+    right: 100%;
+}
+input[type=text],input[type=password],input[type=email]{
+    display: block;
+    position: relative;
+    border: 4px soild #dccccc;
+    border-radius: 9px;
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    outline: none;
+}
+input[type=text]:hover,input[type=password]:hover,input[type=email]:hover{
+    border: 4px soild  #df80ff;
+}
+input[type=submit]{
+    display: block;
+    position: relative;
+    border: 3px soild#df80ff;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 20px;
+    color: #e60a0a;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+input[type=submit]:hover{
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+input[type=checkbox]{
+    background-color: #df80ff;
+}
+#check{
+    margin-top: 10px;
+    text-align: left;
+    color: #ffffff;
+    font-size: 15px;
+}
+.register{
+    color: #b55fd1;
+    font-weight: bold;
+}
+#message{
+    color: red;
+}

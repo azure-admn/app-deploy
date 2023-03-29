@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pro.css">
+</head>
+<body>
+    <div class="box">
+        <div class="page">
+            <div class="header">
+                <a href="#register" class="active" id="register">Login  Form</a>
+            </div>   
+                <div id="errormse"></div>
+                <div class="content">
+                    <form class="register" name="registerform" method="post" onsubmit ="return verifyPassword()">
+                       Username: <input type="text" name="name" id="Logname" placeholder=" Enter Username">
+                       Password: <span id="message">(*)</span> <input type="password" name="password" id="logPassword" placeholder="Enter Password" required>
+                       <div id="check">
+                        <input type="checkbox" id="remember">
+                        <label for="remember"> Remember Me</label>
+                       </div>
+                       <br>
+                       
+                        <input type="submit"  value="Login Now!">
+                        <center> <a href="#" class="btn">Forget Password</a></center>
+                        <br>
+                        <center>
+                        <a href="./pro.html">Back to Signup page</a></center>
+                    </form>
+                </div>
+            
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+</body>
+</html>
