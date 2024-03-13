@@ -6,7 +6,6 @@ COPY pro.js ./
 
 USER node
 
-RUN npm install express
 
 COPY --chown=node:node . .
 
