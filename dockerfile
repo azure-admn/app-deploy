@@ -1,7 +1,15 @@
-FROM node:19.5.0-alpine
+FROM node:16-alpine
 
-WORKDIR /app
-COPY pro.html ./
-RUN npm install
-EXPOSE 5000
-CMD ["npm","run","start"]
+WORKDIR /home/node/app
+
+COPY pro.js ./
+
+USER node
+
+RUN npm install express
+
+COPY --chown=node:node . .
+
+EXPOSE 8085
+
+CMD [ "node", "index.js" ]
