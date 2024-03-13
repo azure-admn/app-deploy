@@ -6,7 +6,6 @@ COPY pro.js ./
 
 USER node
 
-
 COPY --chown=node:node . .
 
 EXPOSE 8085
